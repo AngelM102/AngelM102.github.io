@@ -83,15 +83,25 @@ body {
 	letter-spacing: 3px;
 }
 
+
 .about-text-title {
 	font-size: 5em;
 	margin: 5px 0;
+	transition: all 0.25s;
+}
+
+.about-text:hover > .about-text-title {
+	color: var(--primary);
 }
 
 .about-text-subtitle {
 	font-size: 2em;
 	letter-spacing: 1px;
 	margin: 5px 0;
+}
+
+.about-text:hover > .about-text-subtitle span {
+	color: var(--secundary);
 }
 
 .about-text-subtitle span {
@@ -108,17 +118,24 @@ body {
 }
 
 .more {
+	width: 30%;
+	margin: auto;
 	text-align: center;
-	font-size: 5em;
+	font-size: 2em;
 	text-transform: uppercase;
-	
 }
 
 .more a {
 	color: gray;
 	text-decoration: none;
-
+	transition: all 0.25s;
 }
+
+.more a:hover{
+	 transform: translateY(-15px);
+	 color: var(--secundary);
+}
+
 
 .works {
 	width: 100%;
@@ -292,6 +309,10 @@ footer a {
 
 	.more {
 		font-size: 3em;
+	}
+
+	.card {
+		height: 450px;
 	}
 }
 
