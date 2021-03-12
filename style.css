@@ -43,8 +43,8 @@ body {
 	width: 200px;
 }
 
-.header-enlaces {
-
+.header-enlaces-movil {
+	display: none;
 }
 
 .header-link {
@@ -196,6 +196,8 @@ footer a {
 }
 
 
+
+
 @media screen and (max-width: 1180px) {
 	.cards {
 		grid-template-columns: repeat(2, 300px);
@@ -205,6 +207,13 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
+	.header {
+		height: 150px;
+	}
+
+	.about {
+		height: 500px;
+	}
 
 	.header-logo {
 		width: 100%;
@@ -228,4 +237,61 @@ footer a {
 	}
 }
 
+@media screen and (max-width: 490px) {
+	.header {
+		height: 300px;
+	}
+
+	.about {
+		height: 350px;
+	}
+	.about-text-title {
+		font-size: 3.5em;
+	}
+
+	.about-thumbnail,
+	.about-img {
+		display: none;
+	}
+
+	.about-text {
+		width: 100%;
+		text-align: center;
+	}
+
+	.header-enlaces{
+		display: none;
+	}
+
+	.header-enlaces-movil {
+		width: 100%;
+		display: inline-flex;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.header-enlaces-movil ul {
+		list-style: none;
+	}
+
+	.header-enlaces-movil li {
+		padding: 20px;
+	}
+}
+
+
+@media screen and (max-width: 375px) {
+
+	.about-text-subtitle {
+		font-size: 2em;
+	}
+
+	.about-text-subtitle span {
+		font-size: 1.2em;
+	}
+
+	.more {
+		font-size: 3em;
+	}
+}
 
