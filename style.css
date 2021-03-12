@@ -8,13 +8,14 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	scroll-behavior: smooth
+	scroll-behavior: smooth;
 }
 
 body {
 	background-color: #fff;
 	width: 100%;
 	font-size: 16px;
+	min-width: 	350px;
 }
 
 .contenedor {
@@ -263,7 +264,7 @@ footer a {
 		height: 350px;
 	}
 	.about-text-title {
-		font-size: 3.5em;
+		font-size: 3em;
 	}
 
 	.about-thumbnail,
@@ -274,6 +275,10 @@ footer a {
 	.about-text {
 		width: 100%;
 		text-align: center;
+	}
+
+	.more {
+		font-size: 1.5em;
 	}
 
 	.header-enlaces{
@@ -308,11 +313,13 @@ footer a {
 	}
 
 	.more {
-		font-size: 3em;
+		font-size: 1em;
+		text-align: center;
+		width: 100%;
 	}
 
 	.card {
-		height: 450px;
+		height: 400px;
 	}
 }
 
