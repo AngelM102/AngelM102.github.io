@@ -14,8 +14,9 @@
 body {
 	background-color: #fff;
 	width: 100%;
-	font-size: 16px;
+	font-size: 12px;
 	min-width: 	350px;
+	font-family: 'Merriweather', serif;
 }
 
 .contenedor {
@@ -62,7 +63,7 @@ body {
   	transition-duration: 0.4s;
   	color: white;
   	text-decoration: none;
-  	font-size: 20px;
+  	font-size: 1.5em;
   	border: none;
 }
 
@@ -142,7 +143,6 @@ body {
 	width: 100%;
 	padding: 50px;
 	margin: auto;
-	background-color: #f2f2f2;
 }
 
 .works-title {
@@ -184,13 +184,13 @@ body {
 }
 
 .card-title {
-	font-size: 30px;
+	font-size: 2em;
 	text-align: center;
 	padding: 5px;
 }
 
 .card-description {
-	font-size: 22px;
+	font-size: 1.5em;
 	text-align: center;
 	margin: 10px;
 	color: gray;
@@ -203,7 +203,7 @@ footer {
 	padding: 30px;
 }
 footer p {
-	margin: 20px;
+	margin: 10px;
 	color: white;
 }
 
@@ -213,6 +213,67 @@ footer a {
 	color: white;
 }
 
+.formulario {
+	width: 50%;
+	margin: 20px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.formulario input,
+.formulario textarea {
+	margin: 10px 0;
+	padding: 15px;
+	font-size: .7em;
+	transition: 0.25s all;
+}
+
+.formulario input::-webkit-input-placeholder,
+.formulario textarea::-webkit-input-placeholder { 
+	color: white;
+	letter-spacing: 1px;
+} 
+
+.formulario input:focus,
+.formulario textarea:focus{
+    outline: none;
+}
+
+.formulario input[type='text'],
+.formulario input[type='email'],
+.formulario textarea{
+	background-color: var(--primary);
+	color: #fff;
+	border: none;
+	border-bottom: solid 2px #fff;
+}
+
+.formulario textarea {
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 150px;
+	max-height: 250px;
+	letter-spacing: 1px;
+}
+
+.formulario input[type='submit']{
+	padding: 1em 0;
+	margin: 1em auto;
+	border-radius: 150px;
+	background-color: var(--secundary);
+  	transition-duration: 0.4s;
+  	color: white;
+  	text-decoration: none;
+  	font-size: 20px;
+  	border: none;
+  	width: 300px;
+}
+
+.formulario input[type='submit']:hover {
+	background-color: white;
+	color: var(--primary);
+}
 
 
 
@@ -221,6 +282,10 @@ footer a {
 		grid-template-columns: repeat(2, 300px);
 		grid-template-rows: auto;
 		justify-content: space-around;
+	}
+
+	.formulario {
+		width: 60%;
 	}
 }
 
@@ -244,6 +309,10 @@ footer a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.formulario {
+		width: 80%;
 	}
 }
 
@@ -298,6 +367,12 @@ footer a {
 
 	.header-enlaces-movil li {
 		padding: 20px;
+	}
+
+	.formulario input[type='submit']{
+		width: 200px;
+		min-width: 200px;
+		max-width: 200px;
 	}
 }
 
