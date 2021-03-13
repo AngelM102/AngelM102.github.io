@@ -19,6 +19,11 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 .contenedor {
 	width: 90%;
 	margin: auto;
@@ -56,6 +61,11 @@ body {
 	letter-spacing: 2.5px;
 }
 
+.header-link:hover {
+	text-decoration: underline gray;
+	color: #222;
+}
+
 .btn {
 	padding: 1em 2em;
 	border-radius: 150px;
@@ -74,7 +84,7 @@ body {
 .about {
 	width: 80%;
 	margin: auto;
-	height: 550px;
+	height: 570px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -113,10 +123,21 @@ body {
 
 .about-thumbnail {
 	width: 40%;
+	transition: 0.25s all;
 }
 
 .about-img {
 	width: 100%;
+
+}
+
+.about-thumbnail:hover {
+	width: 45%;
+}
+
+
+.about-img:hover {
+
 }
 
 .more {
@@ -172,7 +193,7 @@ body {
 }
 
 .card:hover {
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 	transform: translateY(-15px);
 }
 
