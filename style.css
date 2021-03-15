@@ -380,7 +380,10 @@ footer a {
 @media screen and (max-width: 490px) {
 
 	.about {
-		height: 350px;
+		height: 500px;
+		flex-direction: column;
+		justify-content: center;
+
 	}
 	.about-text-title {
 		font-size: 3em;
@@ -388,7 +391,8 @@ footer a {
 
 	.about-thumbnail,
 	.about-img {
-		display: none;
+		display: block;
+		width: 100%;
 	}
 
 	.about-text {
