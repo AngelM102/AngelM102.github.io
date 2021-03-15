@@ -395,6 +395,12 @@ footer a {
 		width: 100%;
 	}
 
+	.about-thumbnail:hover {
+		width: 100%;
+	}
+
+
+
 	.about-text {
 		width: 100%;
 		text-align: center;
