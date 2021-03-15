@@ -19,18 +19,14 @@
 				<div class="header-logo">
 					<p>AngeloM102</p>
 				</div>
-				<div class="header-enlaces">
-					<a href="#about" class="header-link">Home</a>
-					<a href="#works" class="header-link">Works</a>
-					<a href="#contact" class="btn">Contact Us</a>
-				</div>
-				<div class="header-enlaces-movil">
-					<ul>
-						<li><a href="#about" class="header-link">Home</a></li>
-						<li><a href="#works" class="header-link">Works</a></li>
-						<li><a href="#contact" class="btn">Contact Us</a></li>
-					</ul>
-				</div>
+
+				<ul class="header-menu" id="menu">
+					<li><a href="#about" class="header-link" onclick="menuMobile()">Home</a></li>
+					<li><a href="#works" class="header-link" onclick="menuMobile()">Works</a></li>
+					<li><a href="#contact" class="btn" onclick="menuMobile()">Contact Us</a></li>
+				</ul>
+
+				<div class="menu-btn" onclick="menuMobile()"><i class="fas fa-bars"></i></div>
 
 			</header>
 
@@ -100,22 +96,26 @@
 			</div>
 		</div>
 		<footer id="contact">
-			<p>Formulario de contacto</p>
+			<p>Contact Form</p>
 
 			<form class="formulario">
-				<input type="text" placeholder="Nombre">
-				<input type="text" placeholder="Apellido">
-				<input type="email" placeholder="Tu correo electrónico">
-				<textarea placeholder="Cuentame..."></textarea>
+				<input type="text" placeholder="User">
+				<input type="email" placeholder="E-mail">
+				<input type="text" placeholder="Reason">
+				<textarea placeholder="Tell me, what do you need?..."></textarea>
 				<input type="submit">
 			</form>
 
-			<p>Página realizada por Angelo Mora</p>
+			<p>Made by Angelo Mora</p>
 
 			<a href="#"><i class="fab fa-facebook"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></i></a>
 			<a href="#"><i class="fab fa-twitter-square"></i></i></a>
 			<a href="#"><i class="fab fa-github"></i></i></a>
 		</footer>
+
+		<script src="menu.js"></script>
 	</body>
+
+
 </html>
