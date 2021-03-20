@@ -81,14 +81,14 @@ a {
 }
 
 .btn {
-	padding: 1em 2em;
+	padding: 2em 4em;
 	border-radius: 150px;
 	background-color: var(--primary);
   	transition-duration: 0.4s;
   	color: white;
   	text-decoration: none;
-  	font-size: 1.5em;
   	border: none;
+  	letter-spacing: 2.5px;
 }
 
 .btn:hover {
@@ -124,6 +124,7 @@ a {
 	font-size: 2em;
 	letter-spacing: 1px;
 	margin: 5px 0;
+	color: #666;
 }
 
 .about-text:hover > .about-text-subtitle span {
@@ -155,11 +156,9 @@ a {
 }
 
 .more {
-	width: 30%;
 	margin: auto;
 	text-align: center;
-	font-size: 2em;
-	text-transform: uppercase;
+	font-size: 1.5rem;
 }
 
 .more a {
@@ -198,12 +197,14 @@ a {
 
 .card {
 	width: 300px;
-	height: 350px;
+	height: 400px;
 	border-radius: 15px;
 	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 	transition: all 0.25s;
 	letter-spacing: 2px;
 	margin: 20px 0px;
+	display: flex;
+	flex-direction: column;
 }
 
 .card:hover {
@@ -218,7 +219,11 @@ a {
 	border-top-left-radius: 15px;
 }
 
+.card-text{
+	margin: 20px;
+}
 .card-title {
+	font-weight: bold;
 	font-size: 2em;
 	text-align: center;
 	padding: 5px;
@@ -269,10 +274,6 @@ footer a {
 	letter-spacing: 1px;
 } 
 
-.formulario input:focus,
-.formulario textarea:focus{
-    outline: none;
-}
 
 .formulario input[type='text'],
 .formulario input[type='email'],
@@ -292,6 +293,12 @@ footer a {
 	letter-spacing: 1px;
 }
 
+.formulario input:focus,
+.formulario textarea:focus{
+    outline: none;
+    border-bottom: solid 2px #999;
+}
+
 .formulario input[type='submit']{
 	padding: 1em 0;
 	margin: 1em auto;
@@ -300,19 +307,21 @@ footer a {
   	transition-duration: 0.4s;
   	color: white;
   	text-decoration: none;
-  	font-size: 20px;
   	border: none;
   	width: 300px;
+  	letter-spacing: 2.5px;
 }
 
 .formulario input[type='submit']:hover {
 	background-color: white;
 	color: var(--primary);
+
 }
 
-.best {
-	display: none;
+.formulario p {
+	font-weight: bold;
 }
+
 
 
 @media screen and (max-width: 1180px) {
